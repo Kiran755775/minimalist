@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Popup Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="product-card" onclick="showPopup('product-1-popup')">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+    </div>
+
+    <div class="product-card" onclick="showPopup('product-2-popup')">
+        <h2>Product 2</h2>
+        <p>Description of Product 2</p>
+    </div>
+
+    <div class="popup" id="product-1-popup">
+        <div class="popup-content">
+            <h2>Product 1 Details</h2>
+            <p>Detailed information about Product 1.</p>
+            <button onclick="closePopup('product-1-popup')">Close</button>
+        </div>
+    </div>
+
+    <div class="popup" id="product-2-popup">
+        <div class="popup-content">
+            <h2>Product 2 Details</h2>
+            <p>Detailed information about Product 2.</p>
+            <button onclick="closePopup('product-2-popup')">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
